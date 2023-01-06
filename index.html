@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Gmail</li>
+        <li>Imagenes</li>
+        <li><i class="bx bxs-grid"></i></li>
+        <li><img src="./img/user.webp" alt="User" /></li>
+      </ul>
+    </nav>
+    <img src="./img/google.webp" alt="Google" class="google-img" />
+    <div class="text-input">
+      <i class="bx bx-search-alt-2" onclick="search()"></i>
+      <input
+        type="text"
+        placeholder="Busca en Google o excribe una URL"
+        id="inputSearch"
+      />
+      <img src="./img/micro.webp" alt="Microfono" />
+    </div>
+    <button class="custom-btn" onclick="hideAndShowModal()">
+      <i class="bx bxs-pencil"></i> Personalizar
+    </button>
+    <div class="modal-color hide" id="modalColor">
+      <input type="color" id="inputColor" />
+    </div>
+    <footer>
+      <img src="./img/logo_secondary.webp" alt="Logo" />
+      <span
+        >Echo con <i class="bx bxs-heart bx-flashing"></i> por
+        <a href="https://github.com/Diego-Nieves26">Diego Nieves</a></span
+      >
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
